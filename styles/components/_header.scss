@@ -1,0 +1,67 @@
+header {
+   .header-content {
+        width: 100%;
+        max-width: 1648px;
+        margin: 0 auto;
+        padding: 10px 15px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+   }
+    nav {
+        display: flex;
+        gap: 19px;
+        a {
+            font-style: normal;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 19px;
+            text-decoration: none;
+            color: $white-color;
+
+            
+        }
+        .burger-btn {
+            display: none;
+            cursor: pointer;
+            
+        }
+
+        @include breakpoint(lg) {
+            .burger-btn {
+                display: block;
+                
+            }
+
+            a {
+                display: none;
+            }
+        }
+    }
+
+}
+
+.header-fixed {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.79);
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    padding: 10px 0;
+
+    
+    
+    z-index: 1;
+}
+
+.hide-fixed {
+    display: none;
+   
+}
+
+.hide {
+    opacity: 0;
+}
+
+
+

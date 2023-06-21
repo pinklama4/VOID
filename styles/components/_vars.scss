@@ -1,0 +1,25 @@
+$black-color: #000;
+$white-color: #fff;
+$btn-color: #F7BF3F;
+$hover-btn-color: #f8b823;
+
+@mixin breakpoint($point) {
+    @if $point == lg {
+        @media (max-width: 700px){@content;}
+    }
+    @else if $point == md {
+        @media (max-width: 651px){@content;}
+    }
+    @else if $point == ft {
+        @media (max-width: 535px){@content;}
+    }
+    @else if $point == sm {
+        @media (max-width: 330px){@content;}
+    }
+    @else if $point == xs {
+        @media (max-width: 320px){@content;}
+    }
+    @else if $point == pr {
+        @media (max-width: 280px){@content;}
+    }
+}

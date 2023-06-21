@@ -1,0 +1,52 @@
+footer {
+    margin-top: 545px;
+    .footer-content {
+        padding: 0 15px;
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 224px;
+        max-width: 1648px;
+        margin: 0 auto;
+        @include breakpoint (lg) {
+            gap: 50px;
+        }
+        @include breakpoint (ft) {
+            grid-template-columns: auto;
+            text-align: center;
+        }
+        .footer-links {
+           
+            a {
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 19px;
+                color: $white-color;
+                
+            }
+            p {
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 19px;
+    
+                color: $white-color;
+                margin-bottom: 10px;
+            }
+           
+            
+        }
+        .footer-info {
+            p {
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 19px;
+                color: $white-color;
+
+                margin-top: 31px;
+            }
+        }
+    }
+    
+}

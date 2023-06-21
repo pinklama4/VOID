@@ -1,0 +1,127 @@
+@import "./components/fonts";
+@import "./components/vars";
+@import "./components/reset";
+
+
+
+@import "./components/preloader";
+@import "./components/header";
+@import "./components/headerBurgerMenu";
+@import "./components/footer";
+
+body {
+    .bacground {
+        background-image: url(../images/void-art-main.png);
+        background-repeat: no-repeat;
+        background-size: 1920px 4320px;
+        background-position: top;
+       
+    }
+
+    background: $black-color;
+    height: 100%;
+    main {
+        .main-content {
+            
+            height: 1070px;
+            p {
+                font-style: normal;
+                font-weight: 700;
+                font-size: 36px;
+                line-height: 44px;
+                text-align: center;
+
+                color: $white-color;
+
+                padding:417px 10px 0;
+                max-width: 823px;
+                margin: 0 auto;
+                @include breakpoint (lg) {
+                    
+                        font-size: 2em;
+                    
+                }
+            }
+        }
+    }
+    .about {
+        .section-about {
+            max-width: 620px;
+            margin: 0 auto;
+            text-align: center;
+            .header-about {
+                font-style: normal;
+                font-weight: 700;
+                font-size: 32px;
+                line-height: 39px;
+                color: $white-color;
+                margin: 130px 0 25px;
+            }
+            .text-about {
+                font-style: normal;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 24px;
+                text-align: center;
+                color: $white-color;
+            }
+        }
+    }
+    .moved {
+        text-align: center;
+        .moved-title {
+            margin: 130px 0;
+            p {
+                font-style: normal;
+                font-weight: 700;
+                font-size: 32px;
+                line-height: 39px;
+                color: $white-color;
+            }
+        }
+        .moved-card {
+            display: grid;
+            grid-template-columns: auto auto;
+            max-width: 700px;
+            margin: 0 auto;
+            .card {
+                p {
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 32px;
+                    line-height: 39px;
+                    color: $white-color;
+
+                    margin: 24px;
+                }
+                button {
+                    padding: 8px 81px;
+                    border-radius: 67px;
+                    background: $btn-color;
+                    border: none;
+                    cursor: pointer;
+                    
+
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 32px;
+                    line-height: 39px;
+                    color: $black-color;
+                    &:hover {
+                        background: $hover-btn-color;
+                    }
+                    @include breakpoint (sm) {
+                        padding: 8px 50px;
+                    }
+                }
+            }
+        }
+        @include breakpoint (md) {
+            .moved-card {
+                grid-template-columns: auto;
+                row-gap: 81px;
+            }
+        }
+    
+    }
+}

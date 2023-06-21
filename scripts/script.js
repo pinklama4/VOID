@@ -8,6 +8,7 @@ const defaultOffser = 100;
 const scrollPosition = () => window.pageYOffset || document.documentElement.scrollTop;
 const containHide = () => header.classList.contains('hide');
 
+
 window.addEventListener('scroll', () => {
     if(scrollPosition() > lastScrol && !containHide() && scrollPosition() > defaultOffser){
         //scroll down

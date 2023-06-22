@@ -94,7 +94,8 @@ body {
 
                     margin: 24px;
                 }
-                button {
+                a {
+                    text-decoration: none;
                     padding: 8px 81px;
                     border-radius: 67px;
                     background: $btn-color;

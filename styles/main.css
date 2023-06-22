@@ -267,7 +267,8 @@ body .moved .moved-card .card p {
   color: #fff;
   margin: 24px;
 }
-body .moved .moved-card .card button {
+body .moved .moved-card .card a {
+  text-decoration: none;
   padding: 8px 81px;
   border-radius: 67px;
   background: #F7BF3F;
@@ -279,11 +280,11 @@ body .moved .moved-card .card button {
   line-height: 39px;
   color: #000;
 }
-body .moved .moved-card .card button:hover {
+body .moved .moved-card .card a:hover {
   background: #f8b823;
 }
 @media (max-width: 330px) {
-  body .moved .moved-card .card button {
+  body .moved .moved-card .card a {
     padding: 8px 50px;
   }
 }

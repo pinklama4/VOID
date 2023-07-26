@@ -27,10 +27,13 @@ window.addEventListener('scroll', () => {
 //menu burger
 const btnMenu = document.querySelector('.burger-btn');
 const menuHidden = document.querySelector('.berger-menu');
+const hiddenDesctop = document.querySelector('body');
 
 btnMenu.addEventListener('click', function() {
     menuHidden.classList.toggle('hidden-burger-menu');
-})
+});
+
+
 
 
 

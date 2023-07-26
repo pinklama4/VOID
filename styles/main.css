@@ -14,62 +14,6 @@ body {
   user-select: none;
 }
 
-.preloader {
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background: #000;
-  transition: 1s all;
-  opacity: 1;
-  visibility: visible;
-}
-.preloader img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 50px;
-}
-.preloader h1 {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 70px;
-  line-height: 121px;
-  color: #fff;
-  text-align: center;
-  margin: 40px;
-}
-.preloader .loader {
-  width: 107px;
-  height: 107px;
-  border: 10px solid #fff;
-  border-radius: 50%;
-  border-top-color: #000;
-  position: absolute;
-  left: 50%;
-  top: 70%;
-  transform: translate(-50%, -50%);
-  animation: 2s spin infinite linear;
-}
-@media (max-width: 535px) {
-  .preloader .loader {
-    top: 70%;
-  }
-}
-.preloader.done {
-  opacity: 0;
-  visibility: hidden;
-}
-
-@keyframes spin {
-  from {
-    transform: translate(-50%, -50%) rotate(0deg);
-  }
-  to {
-    transform: translate(-50%, -50%) rotate(360deg);
-  }
-}
 header .header-content {
   width: 100%;
   max-width: 1648px;

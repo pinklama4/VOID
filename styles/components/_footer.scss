@@ -1,52 +1,48 @@
 footer {
-    margin-top: 545px;
+   margin-top: 545px;
     .footer-content {
-        padding: 0 15px;
         display: grid;
         grid-template-columns: auto auto;
-        gap: 224px;
-        max-width: 1648px;
+        max-width: 1200px;
+        width: 100%;
+        justify-content: space-between;
         margin: 0 auto;
+        padding: 0 20px;
         @include breakpoint (lg) {
             gap: 50px;
         }
         @include breakpoint (ft) {
             grid-template-columns: auto;
+            justify-content: center;
             text-align: center;
         }
         .footer-links {
-           
-            a {
-                font-style: normal;
-                font-weight: 400;
-                font-size: 16px;
-                line-height: 19px;
-                color: $white-color;
-                
-            }
             p {
+                font-family: Inter;
+                font-size: 16px;
                 font-style: normal;
                 font-weight: 400;
-                font-size: 16px;
-                line-height: 19px;
-    
-                color: $white-color;
-                margin-bottom: 10px;
-            }
-           
-            
-        }
-        .footer-info {
-            p {
-                font-style: normal;
-                font-weight: 400;
-                font-size: 16px;
-                line-height: 19px;
                 color: $white-color;
 
-                margin-top: 31px;
+                margin-bottom: 6px;
+            }
+            a {
+                font-family: Inter;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                color: $white-color;
             }
         }
+    }
+    .license {
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        color: $white-color;
+        text-align: center;
+        margin-top: 50px;
     }
     
 }

@@ -11,11 +11,16 @@
 
 body {
     .bacground {
-        background-image: url(../images/void-art-main.png);
+        background-image: url(../images/main.jpg);
         background-repeat: no-repeat;
         background-size: 1920px 4320px;
         background-position: top;
-       
+       @include breakpoint (lg) {
+        background-image: url(../images/main-mobile.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+       }
     }
 
     

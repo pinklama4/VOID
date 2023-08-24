@@ -142,10 +142,18 @@ body {
   height: 100%;
 }
 body .bacground {
-  background-image: url(../images/void-art-main.png);
+  background-image: url(../images/main.jpg);
   background-repeat: no-repeat;
   background-size: 1920px 4320px;
   background-position: top;
+}
+@media (max-width: 700px) {
+  body .bacground {
+    background-image: url(../images/main-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+  }
 }
 body main .main-content {
   height: 1070px;

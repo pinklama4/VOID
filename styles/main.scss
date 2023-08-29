@@ -15,12 +15,12 @@ body {
         background-repeat: no-repeat;
         background-size: 1920px 4320px;
         background-position: top;
-       @include breakpoint (lg) {
-        background-image: url(../images/main-mobile.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: top;
-       }
+        @include breakpoint (lg) {
+            background-image: url(../images/main-mobile.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: top;
+        }
     }
 
     
@@ -44,6 +44,8 @@ body {
                 @include breakpoint (lg) {
                     
                         font-size: 2em;
+                        padding:217px 10px 0;
+
                     
                 }
             }

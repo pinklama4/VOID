@@ -17,13 +17,16 @@ footer {
             text-align: center;
         }
         .footer-links {
+            .contact {
+                display: block;
+                margin-bottom: 6px;
+            }
             p {
                 font-family: Inter;
                 font-size: 16px;
                 font-style: normal;
                 font-weight: 400;
                 color: $white-color;
-
                 margin-bottom: 6px;
             }
             a {
@@ -44,5 +47,4 @@ footer {
         text-align: center;
         margin-top: 50px;
     }
-    
 }

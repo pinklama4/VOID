@@ -10,7 +10,9 @@ body {
   box-sizing: border-box;
   font-family: Inter;
   -webkit-user-select: none;
+  -khtml-user-select: none;
   -moz-user-select: none;
+  -ms-user-select: none;
   user-select: none;
 }
 
@@ -86,9 +88,29 @@ header nav .burger-btn {
 }
 
 .burger-btn:active {
-  transform: rotate(350deg);
+  animation: effect 0.4s infinite;
 }
 
+@keyframes effect {
+  0% {
+    transform: translateX(0px) rotate(0deg);
+  }
+  20% {
+    transform: translateX(-4px) rotate(-4deg);
+  }
+  40% {
+    transform: translateX(-2px) rotate(-2deg);
+  }
+  60% {
+    transform: translateX(4px) rotate(4deg);
+  }
+  80% {
+    transform: translateX(2px) rotate(2deg);
+  }
+  100% {
+    transform: translateX(0px) rotate(0deg);
+  }
+}
 footer {
   margin-top: 545px;
 }
@@ -118,7 +140,6 @@ footer .footer-content .footer-links .contact {
   margin-bottom: 6px;
 }
 footer .footer-content .footer-links p {
-  font-family: Inter;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -126,14 +147,12 @@ footer .footer-content .footer-links p {
   margin-bottom: 6px;
 }
 footer .footer-content .footer-links a {
-  font-family: Inter;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   color: #fff;
 }
 footer .license {
-  font-family: Inter;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -253,4 +272,6 @@ body .moved .moved-card .card a:hover {
     grid-template-columns: auto;
     row-gap: 81px;
   }
-}/*# sourceMappingURL=main.css.map */
+}
+
+/*# sourceMappingURL=main.css.map */
